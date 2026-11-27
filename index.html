@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BuildMetric helps property owners, contractors and developers plan construction costs with quantity surveying services and practical tools.">
+  <meta name="theme-color" content="#101c2c">
+  <title>BuildMetric | Smarter Construction Decisions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="BuildMetric home">
+      <span class="brand-mark">B<span>M</span></span>
+      <span>Build<span class="brand-light">Metric</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#services">Services</a>
+      <a href="#tools">Free tools</a>
+      <a href="#how">How it works</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#contact">Get a quote <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse"></span> CONSTRUCTION COST INTELLIGENCE</div>
+        <h1>Build with clarity.<br><em>Budget with confidence.</em></h1>
+        <p class="hero-copy">Practical quantity surveying support and smarter cost-planning tools for property owners, contractors and developers.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Request a BOQ <span>↗</span></a>
+          <a class="button button-ghost" href="#tools">Explore free tools <span>↓</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-icon">✓</div>
+          <span>Clear quantities. Informed decisions. Better cost control.</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of construction cost planning dashboard">
+        <div class="visual-glow"></div>
+        <div class="plan-card">
+          <div class="plan-top"><span>PROJECT SNAPSHOT</span><span class="live-dot">● PLANNING</span></div>
+          <div class="plan-title">Residential project</div>
+          <div class="plan-sub">Illustrative cost plan</div>
+          <div class="metric-row"><div><small>Floor area</small><strong>180 m²</strong></div><div><small>Estimate status</small><strong class="green">In progress</strong></div></div>
+          <div class="bar-label"><span>Budget allocation</span><span>Illustrative</span></div>
+          <div class="stacked-bar"><i></i><i></i><i></i><i></i></div>
+          <div class="legend"><span><b class="dot d1"></b>Structure</span><span><b class="dot d2"></b>Finishes</span><span><b class="dot d3"></b>Services</span></div>
+          <div class="plan-footer"><span>BUILDMetric / COST PLANNING</span><span>BM—01</span></div>
+        </div>
+        <div class="floating-note"><span class="note-check">✓</span><span><b>Plan before you build</b><small>Make every decision count.</small></span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <span>SUPPORT FOR EVERY STAGE OF CONSTRUCTION</span>
+      <div><b>01</b> Property owners</div><div><b>02</b> Contractors</div><div><b>03</b> Developers</div><div><b>04</b> QS professionals</div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="section-heading">
+        <div><div class="eyebrow dark-eyebrow">WHAT WE DO</div><h2>Better cost decisions<br>start <em>with the details.</em></h2></div>
+        <p>From early budgeting to detailed measurement, BuildMetric is being developed to make construction cost information easier to understand and act on.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">▤</div><span class="card-number">01 / MEASUREMENT</span><h3>BOQ preparation</h3><p>Structured Bills of Quantities to help define the scope of work and support tendering and cost control.</p><a href="#contact">Request this service <span>↗</span></a></article>
+        <article class="service-card featured"><div class="service-icon">⌁</div><span class="card-number">02 / COST PLANNING</span><h3>Cost estimation</h3><p>Early-stage construction budgets based on project information, assumptions and location-specific rates.</p><a href="#tools">Try the estimator <span>↗</span></a></article>
+        <article class="service-card"><div class="service-icon">◫</div><span class="card-number">03 / ADVISORY</span><h3>QS consultancy</h3><p>Practical support for project budgeting, cost reviews, procurement and construction cost questions.</p><a href="#contact">Discuss your project <span>↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="tool-section" id="tools">
+      <div class="tool-copy">
+        <div class="eyebrow">FREE BUILDMetric TOOL</div>
+        <h2>Get an early feel<br>for your <em>project cost.</em></h2>
+        <p>Use this simple calculator to explore a preliminary budget. Enter your own rate per square metre to reflect your project and local market.</p>
+        <div class="tool-disclaimer"><span>ⓘ</span><p>This is an indicative planning calculator, not a professional cost plan, tender price or current market quotation. It excludes project-specific adjustments unless you include them in your rate.</p></div>
+      </div>
+      <div class="calculator">
+        <div class="calc-header"><div><span class="calc-kicker">BUILDMetric / TOOL 001</span><h3>Quick cost estimator</h3></div><span class="calc-icon">↗</span></div>
+        <label for="area">Floor area <span>m²</span></label>
+        <div class="input-wrap"><input id="area" type="number" min="1" step="1" value="120"><span>m²</span></div>
+        <label for="rate">Your estimated rate per m²</label>
+        <div class="input-wrap"><span id="currencyPrefix">KSh</span><input id="rate" type="number" min="1" step="100" value="65000"><span>/ m²</span></div>
+        <label for="currency">Currency</label>
+        <select id="currency"><option value="KSh">Kenyan Shilling (KSh)</option><option value="$">US Dollar ($)</option><option value="£">British Pound (£)</option><option value="€">Euro (€)</option></select>
+        <div class="estimate-result"><span>Indicative base estimate</span><strong id="estimate">KSh 7,800,000</strong><small id="estimateNote">120 m² × KSh 65,000 per m²</small></div>
+        <button class="button button-primary calc-button" id="calculate">Calculate estimate <span>↗</span></button>
+      </div>
+    </section>
+
+    <section class="section process-section" id="how">
+      <div class="section-heading centered"><div class="eyebrow dark-eyebrow">A CLEARER PROCESS</div><h2>From project idea<br>to <em>cost clarity.</em></h2><p>Our intended client journey is straightforward and transparent.</p></div>
+      <div class="process-grid">
+        <div><span>01</span><h3>Tell us about it</h3><p>Share your project type, location, drawings and what you need help with.</p></div>
+        <div><span>02</span><h3>Define the scope</h3><p>We clarify deliverables, assumptions, required information and fees before work begins.</p></div>
+        <div><span>03</span><h3>Get your output</h3><p>Receive an agreed estimate, measurement or QS service deliverable for review.</p></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-mark">BM</div>
+      <div><div class="eyebrow">ABOUT BUILDMETRIC</div><h2>Making construction<br>costs <em>make sense.</em></h2><p>BuildMetric is an emerging quantity surveying and construction cost-planning brand. We are building practical digital tools and accessible professional services for people who plan, price and deliver projects.</p><p class="small-note">Our platform is in its early stage. Services are subject to project scope, professional capacity and confirmation before engagement.</p></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-copy"><div class="eyebrow">LET'S TALK ABOUT YOUR PROJECT</div><h2>Have a project<br>in <em>mind?</em></h2><p>Send us a few details. We'll use them to understand what support you need and follow up with the next steps.</p><div class="contact-points"><span>✓ BOQ enquiries</span><span>✓ Cost estimates</span><span>✓ QS consultations</span></div></div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row"><div><label for="name">Your name</label><input id="name" name="name" required placeholder="Full name"></div><div><label for="email">Email address</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div></div>
+        <label for="service">What do you need?</label><select id="service" name="service"><option>BOQ preparation</option><option>Construction cost estimate</option><option>Quantity surveying consultation</option><option>Other enquiry</option></select>
+        <label for="details">Project details</label><textarea id="details" name="details" rows="4" placeholder="Project type, location, approximate size and what you need..." required></textarea>
+        <button class="button button-primary" type="submit">Prepare enquiry <span>↗</span></button>
+        <p class="form-hint" id="formHint">The enquiry button will prepare an email in your email app. Add your business email in the setup instructions before publishing.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">B<span>M</span></span><span>Build<span class="brand-light">Metric</span></span></a><span>© <span id="year"></span> BuildMetric. Built for better construction decisions.</span><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
