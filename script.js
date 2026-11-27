@@ -45,9 +45,12 @@ document.getElementById("contactForm").addEventListener("submit", event => {
   const body = encodeURIComponent(
     `Name: ${form.get("name")}\nEmail: ${form.get("email")}\nService: ${form.get("service")}\n\nProject details:\n${form.get("details")}`
   );
-  if (BUSINESS_EMAIL.endsWith(".example")) {
-    document.getElementById("formHint").textContent = "Demo form: before publishing, replace hello@buildmetric.example in script.js with your real business email. Then this form will open a pre-filled email.";
-    return;
-  }
   window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${subject}&body=${body}`;
+});
+
+// Product enquiry links preselect the matching item in the contact form.
+document.querySelectorAll('[data-product]').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('service').value = link.dataset.product;
+  });
 });

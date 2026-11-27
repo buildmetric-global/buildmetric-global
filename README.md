@@ -16,7 +16,7 @@ This is the first static MVP website for BuildMetric. It is built with plain HTM
 
 ## Important setup before publishing
 1. Open `script.js`.
-2. Find `const BUSINESS_EMAIL = "hello@buildmetric.example";`
+2. Find `const BUSINESS_EMAIL = "globalbuildmetric@gmail.com";`
 3. Replace it with an email address you control, for example `yourname@gmail.com`.
 4. Save and test the enquiry form.
 
