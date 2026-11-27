@@ -37,7 +37,7 @@ nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Replace this placeholder with your real business email before publishing.
-const BUSINESS_EMAIL = "hello@buildmetric.example";
+const BUSINESS_EMAIL = "globalbuildmetric@gmail.com";
 document.getElementById("contactForm").addEventListener("submit", event => {
   event.preventDefault();
   const form = new FormData(event.currentTarget);
